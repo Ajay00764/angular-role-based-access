@@ -1,0 +1,59 @@
+{
+  "user": [
+    {
+      "id": "Ajay007",
+      "name": "Ajay Kharat",
+      "password": "Ajay@1234",
+      "email": "ajay.kharat@gmail.com",
+      "gender": "male",
+      "role": "Admin",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "Admin",
+      "password": "Admin$1234",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "Admin",
+      "isactive": true
+    },
+    {
+      "id": "staff",
+      "name": "Staff",
+      "password": "Staff$1234",
+      "email": "staff@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isactive": false
+    },
+    {
+      "id": "owner",
+      "name": "Owner",
+      "password": "Owner$1234",
+      "email": "owner@gmail.com",
+      "gender": "male",
+      "role": "owner",
+      "isactive": true
+    },
+    {
+      "id": "rakesh",
+      "name": "RAkesh",
+      "password": "RAkesh@123",
+      "email": "Rakesh@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "owner",
+      "name": "Owner"
+    },
+    {
+      "code": "staff",
+      "name": "Staff"
+    }
+  ]
+}
