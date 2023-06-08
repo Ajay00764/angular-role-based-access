@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+        <h1>{{data?"Update Customer":"Create Customer"}}</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="customerForm" (ngSubmit)="CreateCustomer()">
+            <mat-form-field [style.width]="'100%'" class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field [style.width]="'100%'" class="example-full-width">
+                <mat-label>Credit Limit</mat-label>
+                <input matInput formControlName="creditlimit">
+            </mat-form-field>
+            <div>
+                <button mat-raised-button color="primary">{{data?"Update":"Save"}}</button>
+                <button [style.margin]="'0 10px'" mat-raised-button mat-dialog-close color="accent">Close</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

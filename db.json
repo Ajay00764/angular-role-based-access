@@ -10,50 +10,94 @@
       "isactive": true
     },
     {
-      "id": "admin",
-      "name": "Admin",
-      "password": "Admin$1234",
-      "email": "admin@gmail.com",
-      "gender": "male",
-      "role": "Admin",
-      "isactive": true
-    },
-    {
       "id": "staff",
       "name": "Staff",
       "password": "Staff$1234",
       "email": "staff@gmail.com",
       "gender": "female",
-      "role": "staff",
-      "isactive": false
-    },
-    {
-      "id": "owner",
-      "name": "Owner",
-      "password": "Owner$1234",
-      "email": "owner@gmail.com",
-      "gender": "male",
-      "role": "owner",
+      "role": "user",
       "isactive": true
     },
     {
-      "id": "rakesh",
-      "name": "RAkesh",
-      "password": "RAkesh@123",
-      "email": "Rakesh@gmail.com",
+      "id": "tech",
+      "name": "Tech",
+      "password": "Tech$1234",
+      "email": "tech@gmail.com",
       "gender": "male",
-      "role": "staff",
+      "role": "tech",
       "isactive": true
     }
   ],
   "role": [
     {
-      "code": "owner",
-      "name": "Owner"
+      "code": "user",
+      "name": "User"
     },
     {
-      "code": "staff",
-      "name": "Staff"
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "Admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "Admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 3,
+      "name": "Nilesh",
+      "creditlimit": 50000
+    },
+    {
+      "id": 4,
+      "name": "Vaibhav",
+      "creditlimit": 250000
+    },
+    {
+      "id": 5,
+      "name": "Vishal",
+      "creditlimit": "50550"
+    },
+    {
+      "id": 6,
+      "name": "Ajay Kharat",
+      "creditlimit": "9999"
     }
   ]
 }
